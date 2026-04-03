@@ -8,6 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # Ye line GitHub ko batayegi ki asli folder 'bothisabagent' hai
+    defaults:
+      run:
+        working-directory: ./bothisabagent
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
